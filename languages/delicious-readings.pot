@@ -1,0 +1,176 @@
+# Copyright (C) 2012 Delicious Readings
+# This file is distributed under the same license as the Delicious Readings package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Delicious Readings 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/delicious-readings\n"
+"POT-Creation-Date: 2012-10-06 17:54:01+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: delicious-readings.php:61 delicious-readings.php:264
+msgid "Stored on:"
+msgstr ""
+
+#: delicious-readings.php:63 delicious-readings.php:266
+msgid "Tags:"
+msgstr ""
+
+#: delicious-readings.php:67 delicious-readings.php:271
+msgid "More posts"
+msgstr ""
+
+#: delicious-readings.php:87
+msgid "There was a problem with your feed! The error is %s"
+msgstr ""
+
+#: delicious-readings.php:95
+msgid "No items."
+msgstr ""
+
+#: delicious-readings.php:107
+msgid "Read &laquo;%s&raquo;"
+msgstr ""
+
+#: delicious-readings.php:133
+msgid "Go to the bookmark stored on Delicious."
+msgstr ""
+
+#: delicious-readings.php:148
+msgid "Go to the tag %s su Delicious"
+msgstr ""
+
+#. #-#-#-#-#  delicious-readings.pot (Delicious Readings 1.0)  #-#-#-#-#
+#. Description of the plugin/theme
+#: delicious-readings.php:192
+msgid "Publish a reading list using your Delicious bookmarks"
+msgstr ""
+
+#. #-#-#-#-#  delicious-readings.pot (Delicious Readings 1.0)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: delicious-readings.php:198
+msgid "Delicious Readings"
+msgstr ""
+
+#: delicious-readings.php:258
+msgid "My Readings"
+msgstr ""
+
+#: delicious-readings.php:288
+msgid ""
+"This widget allows you to publish a list of Delicious bookmarks that have a "
+"specific tag. This widget can retrieve those bookmarks and publish them in "
+"your sidebar."
+msgstr ""
+
+#: delicious-readings.php:292
+msgid "Title:"
+msgstr ""
+
+#: delicious-readings.php:299
+msgid "Enter the feed URL:"
+msgstr ""
+
+#: delicious-readings.php:304
+msgid "Usually the feed URL for a Delicious tag has this form: %s."
+msgstr ""
+
+#: delicious-readings.php:305
+msgid ""
+"So, for example, if your username is %1$s and the tag is %2$s, the feed URL "
+"will be %3$s."
+msgstr ""
+
+#: delicious-readings.php:306
+msgid ""
+"Also, you can insert the feed from a service like FeedBurner or Yahoo Pipes, "
+"if Delicious is not directly available to your server."
+msgstr ""
+
+#: delicious-readings.php:312
+msgid "Maximum number of items (maximum 10 items):"
+msgstr ""
+
+#: delicious-readings.php:319
+msgid "Minimum time between two fetchings (in seconds, minimum 3600):"
+msgstr ""
+
+#: delicious-readings.php:329
+msgid "Add %s to links"
+msgstr ""
+
+#: delicious-readings.php:332
+msgid "It will be added only to the link in titles, not in tag links too."
+msgstr ""
+
+#: delicious-readings.php:340
+msgid "Display the tag description"
+msgstr ""
+
+#: delicious-readings.php:346
+msgid "Lenght of the description (in words):"
+msgstr ""
+
+#: delicious-readings.php:348
+msgid "(%s means full text)"
+msgstr ""
+
+#: delicious-readings.php:358
+msgid "Display the date of the bookmark"
+msgstr ""
+
+#: delicious-readings.php:364
+msgid "Text before the date:"
+msgstr ""
+
+#: delicious-readings.php:368 delicious-readings.php:386
+msgid "A space will be added after the text."
+msgstr ""
+
+#: delicious-readings.php:376
+msgid "Display tags"
+msgstr ""
+
+#: delicious-readings.php:382
+msgid "Text before tags list:"
+msgstr ""
+
+#: delicious-readings.php:392
+msgid "Display an hashtag %s before each tag"
+msgstr ""
+
+#: delicious-readings.php:401
+msgid "Display an arrow after each title"
+msgstr ""
+
+#: delicious-readings.php:410
+msgid "Display the link to the entire tag archive"
+msgstr ""
+
+#: delicious-readings.php:416
+msgid "Use this text for the archive link:"
+msgstr ""
+
+#: delicious-readings.php:424
+msgid "Display an arrow after the link to the archive"
+msgstr ""
+
+#: delicious-readings.php:433
+msgid "Open links in a new browser tab"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.aldolat.it/wordpress/wordpress-plugins/delicious-readings/"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Aldo Latino"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.aldolat.it/"
+msgstr ""
