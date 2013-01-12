@@ -1,10 +1,10 @@
 === Delicious Readings ===
 Contributors: aldolat
 Donate link: http://www.aldolat.it/wordpress/wordpress-plugins/delicious-readings/
-Tags: delicious, readings, bookmarks
+Tags: delicious, readings, bookmarks, widget
 Requires at least: 3.0
-Tested up to: 3.4.2
-Stable tag: 1.0
+Tested up to: 3.5
+Stable tag: 1.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -20,13 +20,14 @@ Let's say that you read a webpage and bookmark it as "readings".
 This plugin can get the bookmarks from the tag "readings" (or whatever it is) and display them on a widget in your sidebar.
 
 The plugin may display for each tag:
+
 * The title with link
 * The description if any
 * The date of the bookmark
 * The tags assigned to the bookmark
 * The link to the entire archive of that tag on Delicious
 
-After the plugin's activation, you will have a new widget in Appearance / Widgets
+After the plugin's activation, you will have a new widget in Appearance / Widgets.
 
 == Installation ==
 
@@ -54,6 +55,13 @@ where `USERNAME` is your username on Delicious and `TAG-NAME` is the tag that co
 So, for example, a link could be: `http://delicious.com/v2/rss/myusername/mytag`. Obviously adjust it to your real username ad tag.
 
 == Changelog ==
+
+= 1.1 =
+
+* Moved the widget into a separate file.
+* Fixed a typo in the widget panel.
+* Fixed a bug in the "nofollow" value for rel attribute.
+* Security focusing.
 
 = 1.0 =
 First release of the plugin.
