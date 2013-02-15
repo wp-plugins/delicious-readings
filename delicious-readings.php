@@ -1,15 +1,17 @@
 <?php
-/**
+/*
  * Plugin Name: Delicious Readings
  * Description:  Publish a reading list using your Delicious bookmarks
  * Plugin URI: http://www.aldolat.it/wordpress/wordpress-plugins/delicious-readings/
  * Author: Aldo Latino
  * Author URI: http://www.aldolat.it/
- * Version: 1.1
+ * Version: 2.0
  * License: GPLv3 or later
  * Text Domain: delicious-readings
  * Domain Path: /languages/
- *
+ */
+
+/*
  * Copyright (C) 2012  Aldo Latino  (email : aldolat@gmail.com)
  *
  * This program is free software: you can redistribute it and/or modify
@@ -73,7 +75,7 @@ function dr_fetch_feed( $args ) {
 		'archive_text'     => __( 'More posts', 'delicious-readings' ),
 		'display_arch_arr' => true,
 		'new_tab'          => false,
-		'nofollow'         => true
+		'nofollow'         => true,
 	);
 	$args = wp_parse_args( $args, $defaults );
 	extract( $args, EXTR_SKIP );
@@ -106,7 +108,7 @@ function dr_fetch_feed( $args ) {
 
 					<?php // Title
 						if( $display_arrow ) $arrow        = '&nbsp;&rarr;';            else $arrow = '';
-						if( $new_tab )       $new_tab_link = ' target="_blank"';
+						if( isset( $new_tab ) )       $new_tab_link = ' target="_blank"';
 						if( $nofollow )      $rel_txt      = 'rel="bookmark nofollow"'; else $rel_txt = 'rel="bookmark"';
 					?>
 
@@ -181,6 +183,14 @@ function dr_fetch_feed( $args ) {
  * @since 1.1
  */
 include_once( 'delicious-readings-widget.php' );
+
+
+/**
+ * Include the shortcode
+ *
+ * @since 2.0
+ */
+include_once( 'delicious-readings-shortcode.php' );
 
 
 /**

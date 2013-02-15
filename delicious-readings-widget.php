@@ -56,7 +56,7 @@ class DR_Widget extends WP_Widget {
 			'archive_text'     => $instance['archive_text'],
 			'display_arch_arr' => $instance['display_arch_arr'],
 			'new_tab'          => $instance['new_tab'],
-			'nofollow'         => $instance['nofollow']
+			'nofollow'         => $instance['nofollow'],
 		) );
 		echo $after_widget;
 	}
