@@ -4,7 +4,7 @@
 **Tags:** delicious, readings, bookmarks, widget  
 **Requires at least:** 3.0  
 **Tested up to:** 3.5.1  
-**Stable tag:** 2.0  
+**Stable tag:** 2.1  
 **License:** GPLv3 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
 
@@ -33,38 +33,38 @@ After the plugin's activation, you will have a new widget in Appearance / Widget
 
 You can also use the plugin's shortcode to display your list on a static page or on a single post. Use:
 
-    [dreadings feed_url="http://delicious.com/v2/rss/USERNAME/TAG-NAME"]
+`[dreadings feed_url="http://delicious.com/v2/rss/USERNAME/TAG-NAME"]`
 
 Change `USERNAME` and `TAG-NAME` as required.
 
 In the widget you can use the full set of options. So, for example, if you want to display the tags, use:
 
-    [dreadings feed_url="http://delicious.com/v2/rss/USERNAME/TAG-NAME" display_tags=true]
+`[dreadings feed_url="http://delicious.com/v2/rss/USERNAME/TAG-NAME" display_tags=true]`
 
 **Usage as PHP function**
 
 You can also use the main PHP function directly in your theme. Add these lines where you want it be displayed:
 
-    <?php if ( function_exists( 'dr_fetch_feed' ) ) {
-		$args = array(
-			'feed_url'         => '',
-			'quantity'         => 5,
-			'display_desc'     => false,
-			'truncate'         => 0,
-			'display_date'     => false,
-			'date_text'        => 'Stored on:',
-			'display_tags'     => false,
-			'tags_text'        => 'Tags:',
-			'display_hashtag'  => true,
-			'display_arrow'    => false,
-			'display_archive'  => true,
-			'archive_text'     => 'More posts',
-			'display_arch_arr' => true,
-			'new_tab'          => false,
-			'nofollow'         => true,
-		);
-		dr_fetch_feed( $args );
-    } ?>
+`<?php if ( function_exists( 'dr_fetch_feed' ) ) {
+	$args = array(
+		'feed_url'         => '',
+		'quantity'         => 5,
+		'display_desc'     => false,
+		'truncate'         => 0,
+		'display_date'     => false,
+		'date_text'        => 'Stored on:',
+		'display_tags'     => false,
+		'tags_text'        => 'Tags:',
+		'display_hashtag'  => true,
+		'display_arrow'    => false,
+		'display_archive'  => true,
+		'archive_text'     => 'More posts',
+		'display_arch_arr' => true,
+		'new_tab'          => false,
+		'nofollow'         => true,
+	);
+	dr_fetch_feed( $args );
+} ?>`
 
 Make sure to properly use the opening and closing tags `<?php` and `?>` respectively.
 
@@ -100,6 +100,10 @@ where `USERNAME` is your username on Delicious and `TAG-NAME` is the tag that co
 So, for example, a link could be: `http://delicious.com/v2/rss/myusername/mytag`. Obviously adjust it to your real username ad tag.
 
 ## Changelog ##
+
+### 2.1 ###
+
+* Fixed a bug where the shortcode displayed the output before a custom introductory text (thanks to eggepegge).
 
 ### 2.0 ###
 

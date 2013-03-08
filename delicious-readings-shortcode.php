@@ -27,5 +27,5 @@ function delicious_readings_sc( $atts ) {
 		'nofollow'         => true,
 	), $atts ) );
 
-	dr_fetch_feed( $atts );
+	return get_dr_fetch_feed( $atts );
 }

@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the Delicious Readings package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Delicious Readings 2.0\n"
+"Project-Id-Version: Delicious Readings 2.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/delicious-readings\n"
-"POT-Creation-Date: 2013-02-15 20:30:52+00:00\n"
+"POT-Creation-Date: 2013-03-08 20:34:20+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,27 +13,27 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
 #: delicious-readings-shortcode.php:18 delicious-readings-widget.php:100
-#: delicious-readings.php:69
+#: delicious-readings.php:62
 msgid "Stored on:"
 msgstr ""
 
 #: delicious-readings-shortcode.php:20 delicious-readings-widget.php:102
-#: delicious-readings.php:71
+#: delicious-readings.php:64
 msgid "Tags:"
 msgstr ""
 
 #: delicious-readings-shortcode.php:24 delicious-readings-widget.php:107
-#: delicious-readings.php:75
+#: delicious-readings.php:68
 msgid "More posts"
 msgstr ""
 
-#. #-#-#-#-#  delicious-readings.pot (Delicious Readings 2.0)  #-#-#-#-#
+#. #-#-#-#-#  delicious-readings.pot (Delicious Readings 2.1)  #-#-#-#-#
 #. Description of the plugin/theme
 #: delicious-readings-widget.php:28
 msgid "Publish a reading list using your Delicious bookmarks"
 msgstr ""
 
-#. #-#-#-#-#  delicious-readings.pot (Delicious Readings 2.0)  #-#-#-#-#
+#. #-#-#-#-#  delicious-readings.pot (Delicious Readings 2.1)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: delicious-readings-widget.php:34
 msgid "Delicious Readings"
@@ -146,23 +146,23 @@ msgstr ""
 msgid "Open links in a new browser tab"
 msgstr ""
 
-#: delicious-readings.php:95
+#: delicious-readings.php:88
 msgid "There was a problem with your feed! The error is %s"
 msgstr ""
 
-#: delicious-readings.php:103
+#: delicious-readings.php:96
 msgid "No items."
 msgstr ""
 
-#: delicious-readings.php:115
+#: delicious-readings.php:107
 msgid "Read &laquo;%s&raquo;"
 msgstr ""
 
-#: delicious-readings.php:141
+#: delicious-readings.php:133
 msgid "Go to the bookmark stored on Delicious."
 msgstr ""
 
-#: delicious-readings.php:156
+#: delicious-readings.php:148
 msgid "Go to the tag %s su Delicious"
 msgstr ""
 

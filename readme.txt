@@ -4,7 +4,7 @@ Donate link: http://dev.aldolat.it/projects/delicious-readings/
 Tags: delicious, readings, bookmarks, widget
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 2.0
+Stable tag: 2.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -96,6 +96,10 @@ where `USERNAME` is your username on Delicious and `TAG-NAME` is the tag that co
 So, for example, a link could be: `http://delicious.com/v2/rss/myusername/mytag`. Obviously adjust it to your real username ad tag.
 
 == Changelog ==
+
+= 2.1 =
+
+* Fixed a bug where the shortcode displayed the output before a custom introductory text (thanks to eggepegge).
 
 = 2.0 =
 
