@@ -5,7 +5,7 @@
  * Plugin URI: http://www.aldolat.it/wordpress/wordpress-plugins/delicious-readings/
  * Author: Aldo Latino
  * Author URI: http://www.aldolat.it/
- * Version: 2.1
+ * Version: 2.2
  * License: GPLv3 or later
  * Text Domain: delicious-readings
  * Domain Path: /languages/
@@ -102,7 +102,7 @@ function get_dr_fetch_feed( $args ) {
 					// Title
 					if( $display_arrow )    $arrow        = '&nbsp;&rarr;';            else $arrow = '';
 					if( isset( $new_tab ) ) $new_tab_link = ' target="_blank"';
-					if( $nofollow )         $rel_txt      = ' rel="bookmark nofollow"'; else $rel_txt = 'rel="bookmark"';
+					if( $nofollow )         $rel_txt      = ' rel="bookmark nofollow"'; else $rel_txt = ' rel="bookmark"';
 
 					$title = sprintf( __( 'Read &laquo;%s&raquo;', 'delicious-readings' ), $item->get_title() );
 
@@ -158,7 +158,7 @@ function get_dr_fetch_feed( $args ) {
 
 	$output .= '</ul>';
 
-	if( $display_archive ) {
+	if( ! is_wp_error( $rss ) && $display_archive ) {
 		if( $display_arch_arr ) $arrow = '&nbsp;&rarr;'; else $arrow = '';
 		$output .= '<p class="reading-list-more">';
 			$output .= '<a href="' .  $rss->get_link() . '"' .  $new_tab_link . '>';
@@ -186,7 +186,7 @@ function dr_fetch_feed( $args ) {
  *
  * @since 1.1
  */
-include_once( 'delicious-readings-widget.php' );
+include_once( plugin_dir_path( __FILE__ ) . 'delicious-readings-widget.php' );
 
 
 /**
@@ -194,7 +194,7 @@ include_once( 'delicious-readings-widget.php' );
  *
  * @since 2.0
  */
-include_once( 'delicious-readings-shortcode.php' );
+include_once( plugin_dir_path( __FILE__ ) . 'delicious-readings-shortcode.php' );
 
 
 /**
