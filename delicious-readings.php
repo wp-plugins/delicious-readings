@@ -5,7 +5,7 @@
  * Plugin URI: http://www.aldolat.it/wordpress/wordpress-plugins/delicious-readings/
  * Author: Aldo Latino
  * Author URI: http://www.aldolat.it/
- * Version: 2.2
+ * Version: 2.3
  * License: GPLv3 or later
  * Text Domain: delicious-readings
  * Domain Path: /languages/
@@ -56,6 +56,7 @@ function get_dr_fetch_feed( $args ) {
 	$defaults = array(
 		'feed_url'         => '',
 		'quantity'         => 5,
+		'random'           => false,
 		'display_desc'     => false,
 		'truncate'         => 0,
 		'display_date'     => false,
@@ -96,6 +97,7 @@ function get_dr_fetch_feed( $args ) {
 				$output .= __( 'No items.', 'delicious-readings' );
 			$output .= '</li>';
 		} else {
+			if ( $random ) shuffle( $rss_items );
 			foreach ( $rss_items as $item ) {
 				$output .= '<li class="reading-list-li">';
 

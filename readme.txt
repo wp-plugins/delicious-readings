@@ -3,8 +3,8 @@ Contributors: aldolat
 Donate link: http://dev.aldolat.it/projects/delicious-readings/
 Tags: delicious, readings, bookmarks, widget
 Requires at least: 3.0
-Tested up to: 3.5.1
-Stable tag: 2.2
+Tested up to: 3.9
+Stable tag: 2.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -96,6 +96,10 @@ where `USERNAME` is your username on Delicious and `TAG-NAME` is the tag that co
 So, for example, a link could be: `http://delicious.com/v2/rss/myusername/mytag`. Obviously adjust it to your real username ad tag.
 
 == Changelog ==
+
+= 2.3 =
+
+* NEW: The items can now be displayed in random order (props by whaus).
 
 = 2.2 =
 

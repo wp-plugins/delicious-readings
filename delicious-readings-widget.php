@@ -44,6 +44,7 @@ class DR_Widget extends WP_Widget {
 		dr_fetch_feed( array(
 			'feed_url'         => $instance['feed_url'],
 			'quantity'         => $instance['quantity'],
+			'random'           => $instance['random'],
 			'display_desc'     => $instance['display_desc'],
 			'truncate'         => $instance['truncate'],
 			'display_date'     => $instance['display_date'],
@@ -68,6 +69,7 @@ class DR_Widget extends WP_Widget {
 		$instance['quantity']          = absint( strip_tags( $new_instance['quantity'] ) );
 			if( $instance['quantity'] == '' || ! is_numeric( $instance['quantity'] ) ) $instance['quantity'] = 5;
 			if( $instance['quantity'] > 10 ) $instance['quantity'] = 10;
+		$instance['random']            = $new_instance['random'];
 		$instance['display_date']      = $new_instance['display_date'];
 		$instance['date_text']         = strip_tags( $new_instance['date_text'] );
 		$instance['display_desc']      = $new_instance['display_desc'];
@@ -94,6 +96,7 @@ class DR_Widget extends WP_Widget {
 			'title'            => __( 'My Readings', 'delicious-readings' ),
 			'feed_url'         => '',
 			'quantity'         => 5,
+			'random'           => false,
 			'display_desc'     => false,
 			'truncate'         => 0,
 			'display_date'     => false,
@@ -110,6 +113,7 @@ class DR_Widget extends WP_Widget {
 			'nofollow'         => true
 		);
 		$instance         = wp_parse_args( (array) $instance, $defaults );
+		$random           = (bool) $instance['random'];
 		$display_desc     = (bool) $instance['display_desc'];
 		$display_date     = (bool) $instance['display_date'];
 		$display_tags     = (bool) $instance['display_tags'];
@@ -148,6 +152,13 @@ class DR_Widget extends WP_Widget {
 				<?php _e( 'Maximum number of items (maximum 10 items):', 'delicious-readings' ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'quantity' ); ?>" name="<?php echo $this->get_field_name( 'quantity' ); ?>" type="text" value="<?php echo esc_attr( $instance['quantity'] ); ?>" />
+		</p>
+
+		<p>
+			<input class="checkbox" type="checkbox" <?php checked( $random ); ?> value="1" id="<?php echo $this->get_field_id( 'random' ); ?>" name="<?php echo $this->get_field_name( 'random' ); ?>" />
+			<label for="<?php echo $this->get_field_id( 'random' ); ?>">
+				<?php printf( __( 'Display items in random order', 'delicious-readings' ), '<code>random</code>' ); ?>
+			</label>
 		</p>
 
 		<p>

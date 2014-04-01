@@ -1,169 +1,186 @@
 # Copyright (C) 2010 Delicious Readings
 # This file is distributed under the same license as the Delicious Readings package.
+# Aldo Latino <aldolat@gmail.com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: Delicious Readings\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/delicious-readings\n"
-"POT-Creation-Date: 2013-03-08 20:34:20+00:00\n"
-"PO-Revision-Date: 2013-03-08 21:34+0100\n"
+"POT-Creation-Date: 2014-04-01 20:00:59+00:00\n"
+"PO-Revision-Date: 2014-04-01 22:04+0200\n"
 "Last-Translator: Aldo Latino <aldolat@gmail.com>\n"
-"Language-Team: Delicious Readings <ll@li.org>\n"
-"Language: \n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
 
-#: delicious-readings-shortcode.php:18
-#: delicious-readings-widget.php:100
-#: delicious-readings.php:62
+#: delicious-readings-shortcode.php:19 delicious-readings-widget.php:103
+#: delicious-readings.php:63
 msgid "Stored on:"
 msgstr "Archiviato il:"
 
-#: delicious-readings-shortcode.php:20
-#: delicious-readings-widget.php:102
-#: delicious-readings.php:64
+#: delicious-readings-shortcode.php:21 delicious-readings-widget.php:105
+#: delicious-readings.php:65
 msgid "Tags:"
 msgstr "Tag:"
 
-#: delicious-readings-shortcode.php:24
-#: delicious-readings-widget.php:107
-#: delicious-readings.php:68
+#: delicious-readings-shortcode.php:25 delicious-readings-widget.php:110
+#: delicious-readings.php:69
 msgid "More posts"
 msgstr "Altri post"
 
-#. #-#-#-#-#  delicious-readings.pot (Delicious Readings 2.1)  #-#-#-#-#
+#. #-#-#-#-#  delicious-readings.pot (Delicious Readings 2.3)  #-#-#-#-#
 #. Description of the plugin/theme
 #: delicious-readings-widget.php:28
 msgid "Publish a reading list using your Delicious bookmarks"
 msgstr "Pubblica una lista delle tue letture usando i segnalibri su Delicious"
 
-#. #-#-#-#-#  delicious-readings.pot (Delicious Readings 2.1)  #-#-#-#-#
+#. #-#-#-#-#  delicious-readings.pot (Delicious Readings 2.3)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: delicious-readings-widget.php:34
 msgid "Delicious Readings"
 msgstr "Delicious Readings"
 
-#: delicious-readings-widget.php:94
+#: delicious-readings-widget.php:96
 msgid "My Readings"
 msgstr "Le mie letture"
 
-#: delicious-readings-widget.php:124
-msgid "This widget allows you to publish a list of Delicious bookmarks that have a specific tag. This widget can retrieve those bookmarks and publish them in your sidebar."
-msgstr "Questo widget consente di pubblicare un elenco di segnalibri di Delicious con uno specifico tag. Il widget può prelevare questi segnalibri e pubblicarli nella barra laterale."
-
 #: delicious-readings-widget.php:128
+msgid ""
+"This widget allows you to publish a list of Delicious bookmarks that have a "
+"specific tag. This widget can retrieve those bookmarks and publish them in "
+"your sidebar."
+msgstr ""
+"Questo widget consente di pubblicare un elenco di segnalibri di Delicious "
+"con uno specifico tag. Il widget può prelevare questi segnalibri e "
+"pubblicarli nella barra laterale."
+
+#: delicious-readings-widget.php:132
 msgid "Title:"
 msgstr "Titolo:"
 
-#: delicious-readings-widget.php:135
+#: delicious-readings-widget.php:139
 msgid "Enter the feed URL:"
 msgstr "Inserisci l'URL del feed:"
 
-#: delicious-readings-widget.php:140
+#: delicious-readings-widget.php:144
 msgid "Usually the feed URL for a Delicious tag has this form: %s."
 msgstr "Di solito l'URL del feed di un tag di Delicious ha questa forma: %s."
 
-#: delicious-readings-widget.php:141
-msgid "So, for example, if your username is %1$s and the tag is %2$s, the feed URL will be %3$s."
-msgstr "Così, per esempio, se il tuo nome utente è %1$s e il tag è %2$s, l'URL del feed sarà %3$s."
+#: delicious-readings-widget.php:145
+msgid ""
+"So, for example, if your username is %1$s and the tag is %2$s, the feed URL "
+"will be %3$s."
+msgstr ""
+"Così, per esempio, se il tuo nome utente è %1$s e il tag è %2$s, l'URL del "
+"feed sarà %3$s."
 
-#: delicious-readings-widget.php:142
-msgid "Also, you can insert the feed from a service like FeedBurner or Yahoo Pipes, if Delicious is not directly available to your server."
-msgstr "Infine, si può anche immettere il feed da un servizio come FeedBurner o Yahoo Pipes, se il tuo server non può accedere direttamente a Delicious."
+#: delicious-readings-widget.php:146
+msgid ""
+"Also, you can insert the feed from a service like FeedBurner or Yahoo Pipes, "
+"if Delicious is not directly available to your server."
+msgstr ""
+"Infine, si può anche immettere il feed da un servizio come FeedBurner o "
+"Yahoo Pipes, se il tuo server non può accedere direttamente a Delicious."
 
-#: delicious-readings-widget.php:148
+#: delicious-readings-widget.php:152
 msgid "Maximum number of items (maximum 10 items):"
 msgstr "Numero massimo di elementi (10 al massimo):"
 
-#: delicious-readings-widget.php:155
+#: delicious-readings-widget.php:160
+msgid "Display items in random order"
+msgstr "Visualizza le voci in ordine casuale"
+
+#: delicious-readings-widget.php:166
 msgid "Minimum time between two fetchings (in seconds, minimum 3600):"
 msgstr "Tempo minimo fra due prelievi (in secondi, minimo 3600): "
 
-#: delicious-readings-widget.php:165
+#: delicious-readings-widget.php:176
 msgid "Add %s to links"
 msgstr "Aggiungi %s ai link"
 
-#: delicious-readings-widget.php:168
+#: delicious-readings-widget.php:179
 msgid "It will be added only to the link in titles, not in tag links too."
 msgstr "Sarà aggiunto solo ai link nei titoli, e non anche in quelli dei tag."
 
-#: delicious-readings-widget.php:176
+#: delicious-readings-widget.php:187
 msgid "Display the bookmark description"
 msgstr "Vsualizza la descrizione del segnalibro"
 
-#: delicious-readings-widget.php:182
+#: delicious-readings-widget.php:193
 msgid "Lenght of the description (in words):"
 msgstr "Lunghezza della descrizione (in parole):"
 
-#: delicious-readings-widget.php:184
+#: delicious-readings-widget.php:195
 msgid "(%s means full text)"
 msgstr "(%s visualizza tutto il testo)"
 
-#: delicious-readings-widget.php:194
+#: delicious-readings-widget.php:205
 msgid "Display the date of the bookmark"
 msgstr "Visualizza la data del segnalibro"
 
-#: delicious-readings-widget.php:200
+#: delicious-readings-widget.php:211
 msgid "Text before the date:"
 msgstr "Testo prima della data:"
 
-#: delicious-readings-widget.php:204
-#: delicious-readings-widget.php:222
+#: delicious-readings-widget.php:215 delicious-readings-widget.php:233
 msgid "A space will be added after the text."
 msgstr "Dopo il testo verrà aggiunto uno spazio."
 
-#: delicious-readings-widget.php:212
+#: delicious-readings-widget.php:223
 msgid "Display tags"
 msgstr "Visualizza i tag"
 
-#: delicious-readings-widget.php:218
+#: delicious-readings-widget.php:229
 msgid "Text before tags list:"
 msgstr "Testo prima dei tag:"
 
-#: delicious-readings-widget.php:228
+#: delicious-readings-widget.php:239
 msgid "Display an hashtag %s before each tag"
 msgstr "Visualizza un hashtag %s prima di ogni segnalibro"
 
-#: delicious-readings-widget.php:237
+#: delicious-readings-widget.php:248
 msgid "Display an arrow after each title"
 msgstr "Visualizza una freccia dopo ogni titolo"
 
-#: delicious-readings-widget.php:246
+#: delicious-readings-widget.php:257
 msgid "Display the link to the entire tag archive"
 msgstr "Visualizza il link all'intero archivio del tag"
 
-#: delicious-readings-widget.php:252
+#: delicious-readings-widget.php:263
 msgid "Use this text for the archive link:"
 msgstr "Usa questo testo per il link all'archivio:"
 
-#: delicious-readings-widget.php:260
+#: delicious-readings-widget.php:271
 msgid "Display an arrow after the link to the archive"
 msgstr "Visualizza una freccia dopo il link all'archivio"
 
-#: delicious-readings-widget.php:269
+#: delicious-readings-widget.php:280
 msgid "Open links in a new browser tab"
 msgstr "Apri i link in una nuova scheda del browser"
 
-#: delicious-readings.php:88
+#: delicious-readings.php:89
 msgid "There was a problem with your feed! The error is %s"
 msgstr "C'è un problema col tuo feed! L'errore è %s"
 
-#: delicious-readings.php:96
+#: delicious-readings.php:97
 msgid "No items."
 msgstr "Nessun articolo."
 
-#: delicious-readings.php:107
+#: delicious-readings.php:109
 msgid "Read &laquo;%s&raquo;"
 msgstr "Leggi &laquo;%s&raquo;"
 
-#: delicious-readings.php:133
+#: delicious-readings.php:135
 msgid "Go to the bookmark stored on Delicious."
 msgstr "Vai al segnalibro archiviato su Delicious."
 
-#: delicious-readings.php:148
+#: delicious-readings.php:150
 msgid "Go to the tag %s su Delicious"
 msgstr "Vai al tag %s archiviato su Delicious."
 

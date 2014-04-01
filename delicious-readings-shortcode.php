@@ -12,6 +12,7 @@ function delicious_readings_sc( $atts ) {
 	extract( shortcode_atts( array(
 		'feed_url'         => '',
 		'quantity'         => 5,
+		'random'           => false,
 		'display_desc'     => false,
 		'truncate'         => 0,
 		'display_date'     => false,
