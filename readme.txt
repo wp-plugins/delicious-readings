@@ -15,7 +15,7 @@ Publish your readings on your WordPress blog using your Delicious Bookmarks.
 This plugin allows you to publish some of your Delicious bookmarks on your blog:
 it retrieves the bookmarks from a specific tag and publishes them on your sidebar.
 
-I could be useful, for example, to publish your readings on the Web.
+It could be useful, for example, to publish your readings on the Web.
 Let's say that you read a webpage and bookmark it as "readings".
 This plugin can get the bookmarks from the tag "readings" (or whatever it is) and display them on a widget in your sidebar. You can also use a shortcode if you want to display your reading list on a static page or on a single post.
 
