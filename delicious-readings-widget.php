@@ -68,7 +68,7 @@ class DR_Widget extends WP_Widget {
 		$instance['feed_url']          = esc_url( strip_tags( $new_instance['feed_url'] ) );
 		$instance['quantity']          = absint( strip_tags( $new_instance['quantity'] ) );
 			if( $instance['quantity'] == '' || ! is_numeric( $instance['quantity'] ) ) $instance['quantity'] = 5;
-			if( $instance['quantity'] > 10 ) $instance['quantity'] = 10;
+			if( $instance['quantity'] > 100 ) $instance['quantity'] = 100;
 		$instance['random']            = $new_instance['random'];
 		$instance['display_date']      = $new_instance['display_date'];
 		$instance['date_text']         = strip_tags( $new_instance['date_text'] );
@@ -125,7 +125,7 @@ class DR_Widget extends WP_Widget {
 		$nofollow         = (bool) $instance['nofollow'];
 		?>
 		<p>
-			<?php _e( 'This widget allows you to publish a list of Delicious bookmarks that have a specific tag. This widget can retrieve those bookmarks and publish them in your sidebar.', 'delicious-readings' ); ?>
+			<?php _e( 'This widget allows you to publish a list of Delicious bookmarks in your website. This widget can retrieve those bookmarks and publish them in your sidebar.', 'delicious-readings' ); ?>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>">
@@ -141,15 +141,16 @@ class DR_Widget extends WP_Widget {
 			<input class="widefat" id="<?php echo $this->get_field_id( 'feed_url' ); ?>" name="<?php echo $this->get_field_name( 'feed_url' ); ?>" type="text" value="<?php echo esc_attr( $instance['feed_url'] ); ?>" />
 			<br />
 			<em>
-				<span><?php printf( __( 'Usually the feed URL for a Delicious tag has this form: %s.', 'delicious-readings' ), '<code>http://delicious.com/v2/rss/USERNAME/TAG-NAME</code>' ); ?></span>
-				<span><?php printf( __( 'So, for example, if your username is %1$s and the tag is %2$s, the feed URL will be %3$s.', 'delicious-readings' ), '<code>myusername</code>', '<code>readings</code>', '<code>http://delicious.com/v2/rss/myusername/readings</code>' ); ?></span>
-				<span><?php _e( 'Also, you can insert the feed from a service like FeedBurner or Yahoo Pipes, if Delicious is not directly available to your server.', 'delicious-readings' ); ?></span>
+				<?php _e( 'Examples of Delicious RSS URLs:', 'delicious-readings' ); ?><br />
+				<strong>http://delicious.com/v2/rss/USERNAME</strong><br />
+				<strong>http://delicious.com/v2/rss/USERNAME/TAG-NAME</strong><br />
+				<?php _e( 'Also, you can insert the feed from a service like FeedBurner or Yahoo Pipes, if Delicious is not directly available to your server.', 'delicious-readings' ); ?>
 			</em>
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id( 'quantity' ); ?>">
-				<?php _e( 'Maximum number of items (maximum 10 items):', 'delicious-readings' ); ?>
+				<?php _e( 'Maximum number of items (maximum 100 items):', 'delicious-readings' ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'quantity' ); ?>" name="<?php echo $this->get_field_name( 'quantity' ); ?>" type="text" value="<?php echo esc_attr( $instance['quantity'] ); ?>" />
 		</p>
@@ -176,7 +177,7 @@ class DR_Widget extends WP_Widget {
 				<?php printf( __( 'Add %s to links', 'delicious-readings' ), '<code>nofollow</code>' ); ?>
 			</label>
 			<br />
-			<?php _e( 'It will be added only to the link in titles, not in tag links too.', 'delicious-readings' ); ?>
+			<em><?php _e( 'It will be added only to the link in titles, not in tag links too.', 'delicious-readings' ); ?></em>
 		</p>
 
 		<hr />
