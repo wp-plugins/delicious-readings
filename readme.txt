@@ -3,8 +3,8 @@ Contributors: aldolat
 Donate link: http://dev.aldolat.it/projects/delicious-readings/
 Tags: delicious, readings, bookmarks, widget
 Requires at least: 3.0
-Tested up to: 4.1
-Stable tag: 2.4
+Tested up to: 4.3
+Stable tag: 2.4.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -45,7 +45,7 @@ In the widget you can use the full set of options. So, for example, if you want 
 
 You can also use the main PHP function directly in your theme. Add these lines where you want it be displayed:
 
-`<?php if ( function_exists( 'dr_fetch_feed' ) ) {
+`if ( function_exists( 'dr_fetch_feed' ) ) {
 	$args = array(
 		'feed_url'         => '',
 		'quantity'         => 5,
@@ -64,7 +64,7 @@ You can also use the main PHP function directly in your theme. Add these lines w
 		'nofollow'         => true,
 	);
 	dr_fetch_feed( $args );
-} ?>`
+}`
 
 Make sure to properly use the opening and closing tags `<?php` and `?>` respectively.
 
@@ -96,6 +96,10 @@ where `USERNAME` is your username on Delicious and `TAG-NAME` is the tag that co
 So, for example, a link could be: `http://delicious.com/v2/rss/myusername/mytag`. Obviously adjust it to your real username ad tag.
 
 == Changelog ==
+
+= 2.4.1 =
+
+* Switched to PHP5 __contruct() in creating the widget.
 
 = 2.4 =
 

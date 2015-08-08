@@ -22,7 +22,7 @@ add_action( 'widgets_init', 'dr_load_widget' );
  * @since 1.0
  */
 class DR_Widget extends WP_Widget {
-	function DR_Widget() {
+	public function __construct() {
 		$widget_ops = array(
 			'classname'   => 'dr_widget',
 			'description' => __( 'Publish a reading list using your Delicious bookmarks', 'delicious-readings' )
@@ -31,10 +31,16 @@ class DR_Widget extends WP_Widget {
 			'width'   => 350,
 			'id_base' => 'dr-widget'
 		);
-		$this->WP_Widget( 'dr-widget', __( 'Delicious Readings', 'delicious-readings' ), $widget_ops, $control_ops );
+
+		parent::__construct(
+			'dr-widget',
+			__( 'Delicious Readings', 'delicious-readings' ),
+			$widget_ops,
+			$control_ops
+		);
 	}
 
-	function widget( $args, $instance ) {
+	public function widget( $args, $instance ) {
 		extract( $args );
 
 		$title = apply_filters( 'widget_title', $instance['title'] );
@@ -62,7 +68,7 @@ class DR_Widget extends WP_Widget {
 		echo $after_widget;
 	}
 
-	function update( $new_instance, $old_instance ) {
+	public function update( $new_instance, $old_instance ) {
 		$instance = $old_instance;
 		$instance['title']             = strip_tags( $new_instance['title'] );
 		$instance['feed_url']          = esc_url( strip_tags( $new_instance['feed_url'] ) );
@@ -91,7 +97,7 @@ class DR_Widget extends WP_Widget {
 		return $instance;
 	}
 
-	function form($instance) {
+	public function form($instance) {
 		$defaults = array(
 			'title'            => __( 'My Readings', 'delicious-readings' ),
 			'feed_url'         => '',

@@ -5,7 +5,7 @@
  * Plugin URI: http://www.aldolat.it/wordpress/wordpress-plugins/delicious-readings/
  * Author: Aldo Latino
  * Author URI: http://www.aldolat.it/
- * Version: 2.4
+ * Version: 2.4.1
  * License: GPLv3 or later
  * Text Domain: delicious-readings
  * Domain Path: /languages/
@@ -32,7 +32,7 @@
 /**
  * Define the version of the plugin.
  */
-define( 'DRPLUGIN_VERSION', '2.4' );
+define( 'DRPLUGIN_VERSION', '2.4.1' );
 
 /**
  * Check for the cache lifetime in the database and set it to 3600 seconds minimum.
